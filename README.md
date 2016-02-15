@@ -3,7 +3,7 @@ These resources contain wordlists for creating statistically likely usernames fo
 
 When many users are present in an application or network, I normally approach password attacks by guessing likely usernames, rather than focusing on guessing many passwords. This has several advantages (such as avoiding account lockout for example) and is almost always successful (usually several users have either "Password1" or "password").
 
-The core username lists here were generated orignally from US Census data, and sorted in statistically likely order, such that username lists can be generated quickly to match common organisational patterns. These lists have been tested extensively in live attacks against target sites during authorised penetration tests, with a high degree of success, very quickly. The initial reason for generating these was that I wanted to know when it was statistically likely to try z.smith, compared to say b.jones, and create the most efficient list possible based on popular formats.
+The core username lists here were generated orignally from US Census data, and sorted in statistically likely order, such that username lists can be generated quickly to match common organisational patterns. These lists have been tested extensively in live attacks, against target sites during authorised penetration tests, with a high degree of success. The initial reason for generating these was that I wanted to know when it was statistically likely to try z.smith, compared to say b.jones, and create the most efficient guesses possible, based on popular formats.
 
 The following base wordlists are provided:
 
