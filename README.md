@@ -18,7 +18,9 @@ Forenames, both male and female
 
 These lists can be combined in a variety of ways. For example if a pentester uses Foca, or similar and identifies that the username format of an organisation is "j_smith" and wants 10,000 guesses (to try with "Password1", or whatever):
 
+...
 head -n 10000 sorted-letter-dot-surname-lowercase.txt | tr "\." "_" > usernames.txt
+...
 
 Altertatively; if the username is jwilliams , but truncated to 7 characters:
 
