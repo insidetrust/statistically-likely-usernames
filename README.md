@@ -1,5 +1,5 @@
 # statistically-likely-usernames
-These resource containts wordlists for creating statistically likely username lists for use in username enumeration, simulated password attacks and other security testing tasks.
+These resources contain wordlists for creating statistically likely usernames for use in username enumeration, simulated password attacks and other security testing tasks.
 
 The core username lists were generated orignally from US Census data, and sorted in statistically likely order, such that username lists can be generated quickly to match common organisational patterns. These lists have been tested extensively in live attacks against target sites during authorised penetration tests, with a high degree of success. The initial reason for generating these was that I wanted to know when it was statistically likely to try z.smith, compared to say b.jones, and create the most efficient list possible based on the available statistics.
 
@@ -28,11 +28,11 @@ Altertatively; if the username is jwilliams , but truncated to 7 characters:
 
 (note, when truncating usernames, duplicates can be created, so it very is important to remove these, especially when used with password attacks where lockout is present. This can be done with the "awk '!x[$0]++'" command, as shown above)
 
-Email addresses can be created as follows, for example smith.j@example.com:
+Email addresses can be created as follows, for example `smith.j@example.com`:
 
 `head -n 10000 sorted-letter-dot-surname-lowercase.txt | awk -F "." '{ print $2 "." $1 }' | sed 's/$/@example.com/g' > usernames.txt`
 
-Here for example we are creating email addresses from male and female names in the format james.smith@example.com
+Here for example we are creating email addresses from male and female names in the format `james.smith@example.com`
 
 `for first in $(head -q first*male.txt); do for last in $(head last1000.txt); do echo $first.$last@example.com; done; done > usernames.txt`
 
