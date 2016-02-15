@@ -1,7 +1,9 @@
 # statistically-likely-usernames
 These resources contain wordlists for creating statistically likely usernames for use in username enumeration, simulated password attacks and other security testing tasks.
 
-The core username lists were generated orignally from US Census data, and sorted in statistically likely order, such that username lists can be generated quickly to match common organisational patterns. These lists have been tested extensively in live attacks against target sites during authorised penetration tests, with a high degree of success. The initial reason for generating these was that I wanted to know when it was statistically likely to try z.smith, compared to say b.jones, and create the most efficient list possible based on the available statistics.
+When many users are present in an application or network, I normally approach password attacks by guessing likely usernames, rather than focusing on guessing many passwords. This has several advantages (such as avoiding account lockout for example) and is almost always successful (usually several users have either "Password1" or "password").
+
+The core username lists here were generated orignally from US Census data, and sorted in statistically likely order, such that username lists can be generated quickly to match common organisational patterns. These lists have been tested extensively in live attacks against target sites during authorised penetration tests, with a high degree of success, very quickly. The initial reason for generating these was that I wanted to know when it was statistically likely to try z.smith, compared to say b.jones, and create the most efficient list possible based on popular formats.
 
 The following base wordlists are provided:
 
@@ -22,7 +24,7 @@ These lists can then be manipulated and combined in a variety of ways. For examp
 
 `head -n 10000 sorted-letter-dot-surname-lowercase.txt | tr "\." "_" > usernames.txt`
 
-Altertatively; if the username is jwilliams , but truncated to 7 characters:
+Altertatively; if the username would be jwilliams , but is always truncated to 7 characters, such as `jwillia`:
 
 `head -n 10000 sorted-letter-dot-surname-lowercase.txt | tr -d "." | cut -c1-7 | awk '!x[$0]++' > usernames.txt`
 
