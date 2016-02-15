@@ -20,11 +20,11 @@ Forenames, both male and female
  - firstfemale.txt
  - firstmale.txt
 
-These lists can then be manipulated and combined in a variety of ways. For example if a pentester uses Foca, or similar, and identifies that the username format of an organisation is "j_smith" and wants 10,000 guesses (with which to try "Password1", or whatever):
+These lists can then be manipulated and combined in a variety of ways. For example if a pentester uses Foca, or similar, and identifies that the username format of an organisation is `j_smith` and wants 10,000 guesses (with which to try "Password1", or whatever):
 
 `head -n 10000 sorted-letter-dot-surname-lowercase.txt | tr "\." "_" > usernames.txt`
 
-Altertatively; if the username would be jwilliams , but is always truncated to 7 characters, such as `jwillia`:
+Altertatively; if the username would be `jwilliams` , but is always truncated to 7 characters, such as `jwillia`:
 
 `head -n 10000 sorted-letter-dot-surname-lowercase.txt | tr -d "." | cut -c1-7 | awk '!x[$0]++' > usernames.txt`
 
