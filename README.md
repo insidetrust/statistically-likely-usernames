@@ -1,24 +1,24 @@
 # statistically-likely-usernames
 This resource contains wordlists for creating statistically likely usernames for use in username-enumeration, simulated password-attacks and other security testing tasks.
 
-When many users are present in an application or network, I normally approach password-attacks by guessing likely usernames, rather than focusing on guessing too many passwords. This has several advantages (such as avoiding account lockout for example) and is almost always successful (usually several users have either "Password1", "password" or something equally trivial).
+When many users are present in an application or network, I normally approach password-attacks by guessing likely usernames, (rather than focusing on guessing too many passwords). This has several advantages (such as avoiding account lockout for example) and is almost always successful (usually several users have either "Password1", "password" or something equally trivial).
 
-The core username lists here were generated orignally from US Census data, and sorted in statistically likely order, such that username lists can be generated quickly to match common organisational patterns. These lists have been tested extensively in live attacks, against target sites during authorised penetration tests, with a very high degree of success. The initial reason for generating these was that I wanted to know when it was statistically worthwhile to try z.smith, compared to say j.jackson (or any other name) and create the most efficient set of guesses in the shortest possible time, based on popular formats.
+The core username lists here were generated orignally from US Census data, and sorted in statistically likely order, such that username lists can be generated quickly to match common organisational patterns. These lists have been tested extensively in live attacks against target networks and applications. This resulted in a very high degree of success (during authorised penetration tests). The initial reason for generating these was that I wanted to know when it was statistically worthwhile to try z.smith, compared to say j.jackson (or any other name) and create the most efficient set of guesses in the shortest possible time, based on popular formats.
 
 The following base wordlists are provided:
 
 Forename with first initial of surname e.g. `james.m`
- - sorted-forename-dot-letter-lowercase.txt
+`sorted-forename-dot-letter-lowercase.txt`
 
 First initial with surname e.g. `j.smith`
- - sorted-letter-dot-surname-lowercase.txt
+`sorted-letter-dot-surname-lowercase.txt`
 
 Top 1000 most popular surnames
- - last1000.txt
+`last1000.txt`
 
 Forenames, both male and female
- - firstfemale.txt
- - firstmale.txt
+`firstfemale.txt`
+`firstmale.txt`
 
 These lists can then be manipulated and combined in a variety of ways. For example if a pentester uses Foca, or similar, and identifies that the username format of an organisation is `j_smith` and wants 10,000 guesses (with which to try "Password1", or whatever):
 
