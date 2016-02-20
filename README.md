@@ -8,17 +8,17 @@ The core username lists here were generated orignally from US Census data, and s
 The following base wordlists are provided:
 
 Forename with first initial of surname e.g. `james.m`
-`sorted-forename-dot-letter-lowercase.txt`
+ - sorted-forename-dot-letter-lowercase.txt
 
 First initial with surname e.g. `j.smith`
-`sorted-letter-dot-surname-lowercase.txt`
+ - sorted-letter-dot-surname-lowercase.txt
 
 Top 1000 most popular surnames
-`last1000.txt`
+ - last1000.txt
 
 Forenames, both male and female
-`firstfemale.txt`
-`firstmale.txt`
+ - firstfemale.txt
+ - firstmale.txt
 
 These lists can then be manipulated and combined in a variety of ways. For example if a pentester uses Foca, or similar, and identifies that the username format of an organisation is `j_smith` and wants 10,000 guesses (with which to try "Password1", or whatever):
 
