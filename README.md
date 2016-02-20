@@ -28,7 +28,7 @@ Altertatively; if the username would be `jwilliams` , but is always truncated to
 
 `head -n 10000 sorted-letter-dot-surname-lowercase.txt | tr -d "." | cut -c1-7 | awk '!x[$0]++' > usernames.txt`
 
-(note, when truncating usernames, duplicates can be created, so it very is important to remove these, especially when used with password attacks where lockout is present. This can be done with the "awk '!x[$0]++'" command, as shown above)
+**Important:** when truncating usernames, duplicates can be generated, so it very is important to remove these, especially when used with password attacks where lockout is present. This can be done, whilst keeping statistically likely order, with the `awk '!x[$0]++'` command (as shown above).
 
 Email addresses can be created as follows, for example `smith.j@example.com`:
 
