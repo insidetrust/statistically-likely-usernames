@@ -36,7 +36,7 @@ Email addresses can be created as follows, for example `smith.j@example.com`:
 
 Here for example we are creating email addresses from male and female names in the format `james.smith@example.com`
 
-`for first in $(head -q first*male.txt); do for last in $(head last1000.txt); do echo $first.$last@example.com; done; done > usernames.txt`
+`for last in $(head last1000.txt); do for first in $(head -q first*male.txt); do echo $first.$last@example.com; done; done > usernames.txt`
 
 Obviously a variety of formats can be combined to generate a selection of likely popular usernames or email address formats (especially useful if the format cannot be enumerated in advance, or mixed formats are present).
 
