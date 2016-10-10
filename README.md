@@ -9,5 +9,20 @@ A bunch of pre-canned lists are provided as follows:
 
 top-formats-x45000.txt = Start here. This is an excellent list if you don't know the username format. 12 popular formats interleaved in statistically likely order.
 
+john.smith-at-example.com-x50000.txt = A very common email address format (replace example.com with the target domain)
 
+Formats of the following pre-canned lists should be self-evident:
+
+jsmith-x50000.txt
+smithj-x5000.txt # Should be longer?
+johns-x5000.txt # Should be longer?
+john-x10000.txt
+smith-x5000.txt
+jsmith2-x5000.txt
+smithj2-1000.txt
+john.smith-x50000.txt
+jjsmith-x5000.txt  # Should be longer?
+smithjj-x5000.txt # Currently missing?
+johnjs-x5000.txt  # Should be longer?
+johnsmith-x5000.txt  # Should be longer?
 
