@@ -19,9 +19,9 @@ top-formats-x45000.txt = Start here. This is an excellent list if you don't know
 
 john.smith-at-example.com-x50000.txt = A very common email address format (replace example.com with the target domain)
 
-Formats of the following pre-canned lists should be self-evident:
+## Formats of the following pre-canned lists should be self-evident from the filename:
 
-jsmith-x50000.txt - another excellent place to start (I've had loads of success with this one)
+jsmith-x50000.txt - An excellent focused list to start with (I've had loads of success with this one, straight out of the box)
 
 smithj-x5000.txt # TODO tweak; should be longer
 
