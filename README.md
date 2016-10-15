@@ -9,7 +9,7 @@ The core username lists here were generated orignally from US Census data, but I
 
 The initial reason for generating these username lists was that I wanted to know when it was statistically worthwhile to try z.smith, compared to say j.jackson (or any other name) and create the most efficient set of guesses in the shortest possible time, based on the most common username formats, in statistically likely order.
 
-As you can see below, name popularity follows the pareto curve. As seen below, it would be best to start with jsmith and work down.
+As you can see below, name popularity follows the pareto curve, so it's best to start with jsmith and work down...
 
 ![alt text](https://github.com/insidetrust/statistically-likely-usernames/blob/master/popular-names.JPG "Pereto curves are awesome")
 
