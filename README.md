@@ -7,13 +7,13 @@ The best approach is a horizontal password attack, trying one password for thous
 
 The core username lists here were generated orignally from US Census data, but I have recently updated this to use data indexed from Facebook. These lists have been tested extensively in live attacks against target networks and applications. This resulted in a very high degree of success (during authorised penetration tests).
 
-The initial reason for generating these username lists was that I wanted to know when it was statistically worthwhile to try z.smith, compared to say j.jackson (or any other name) and create the most efficient set of guesses in the shortest possible time, based on the most common username formats, in statistically likely order.
+The initial reason for generating these username lists was that I wanted to know when it was statistically worthwhile to try z.smith, compared to say j.jackson (or any other name) and create the most efficient set of guesses in the shortest possible time, based on common username formats in statistically likely order.
 
 As you can see below, name popularity follows the pareto curve, so it's best to start with jsmith and work down...
 
 ![alt text](https://github.com/insidetrust/statistically-likely-usernames/blob/master/popular-names.JPG "Pereto curves are awesome")
 
-A bunch of pre-canned lists are provided as follows:
+## A bunch of pre-canned lists are provided as follows:
 
 top-formats-x45000.txt = Start here. This is an excellent list if you don't know the username format. 12 popular formats interleaved in statistically likely order.
 
