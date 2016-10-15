@@ -3,6 +3,8 @@ This resource contains wordlists for creating statistically likely usernames for
 
 When many users are present in an application or network, I normally approach password-attacks by guessing likely usernames, (rather than focusing on guessing too many passwords). This has several advantages (such as avoiding account lockout for example) and is almost always successful (usually several users have either "Password1", "password" or something equally trivial).
 
+The best approach is a horizontal password attack, trying one password for thousands of possible usernames.
+
 The core username lists here were generated orignally from US Census data, but I have recently updated this to use data indexed from Facebook. These lists have been tested extensively in live attacks against target networks and applications. This resulted in a very high degree of success (during authorised penetration tests). The initial reason for generating these was that I wanted to know when it was statistically worthwhile to try z.smith, compared to say j.jackson (or any other name) and create the most efficient set of guesses in the shortest possible time, based on popular formats.
 
 ![alt text](https://github.com/insidetrust/statistically-likely-usernames/blob/master/popular-names.JPG "Pereto curves are awesome")
