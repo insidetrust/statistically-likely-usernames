@@ -13,13 +13,9 @@ As you can see below, name popularity follows the pareto curve, so it's best to 
 
 ![alt text](https://github.com/insidetrust/statistically-likely-usernames/blob/master/popular-names.JPG "Pereto curves are awesome")
 
-## A bunch of pre-canned lists are provided as follows:
+## A bunch of pre-canned lists are provided, as well as base-lists for generating your own in a variety of targeted formats:
 
-top-formats-x45000.txt = Start here. This is an excellent list if you don't know the username format. 12 popular formats interleaved in statistically likely order.
-
-john.smith-at-example.com-x50000.txt = A very common email address format (replace example.com with the target domain)
-
-## Formats of the following pre-canned lists should be self-evident from the filename:
+### (Formats of the following pre-canned lists should be self-evident from the filename)
 
 jsmith.txt - A popular place to start, 50,000 usernames in a very common format.
 
