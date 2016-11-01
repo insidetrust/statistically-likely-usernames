@@ -21,28 +21,50 @@ john.smith-at-example.com-x50000.txt = A very common email address format (repla
 
 ## Formats of the following pre-canned lists should be self-evident from the filename:
 
-jsmith-x50000.txt - An excellent focused list to start with (I've had loads of success with this one, straight out of the box)
+jsmith.txt - A popular place to start, 50,000 usernames in a very common format.
 
-smithj-x5000.txt # TODO tweak; should be longer
+john.smith.txt - Also a very common format 250,000 (more usernames are typically required here due to the higher entropy).
 
-johns-x5000.txt # TODO tweak; should be longer
+jjs.txt - This works surprisingly well, all 17,576 three letter combinations, for the most part sorted by most popular initials.
 
-john-x10000.txt
+john.smith-at-example.com.txt - 250,000 email addresses in this common format (replace the example.com with a target domain)
 
-smith-x5000.txt
+top-formats.txt - A mix in a variety of popular formats (around 1 million examples) interleaved and de-duplicated for ease-of-use (a very useful first step when the format is unknown, but slower than targeted formats)
 
-jsmith2-x5000.txt
+john.txt - 10,000 forenames
 
-smithj2-1000.txt
+smith.txt - 10,000 surnames
 
-john.smith-x50000.txt
+johnsmith.txt - Just under 250,000 examples
 
-jjsmith-x5000.txt  # TODO tweak; should be longer
+jjsmith.txt - 100,000 examples
 
-smithjj-x5000.txt # TODO tweak; missing
+smithjj.txt - 100,000 examples
 
-johnjs-x5000.txt # TODO tweak; should be longer
+johnjs.txt - 100,000 examples
 
-johnsmith-x5000.txt # TODO tweak; should be longer
+smithj.txt - 50,000 examples
 
-jjs-x4800.txt 
+johns.txt - 50,000 examples
+
+jsmith2.txt - A popular format which commonly suffers from collisions (hence jsmith2, and jsmith3 etc. 5,000 examples)
+
+smithj2.txt - As above x 5,000
+
+## Rolling your own
+
+If this isn't sufficient (and it won't be in some cases, expect that!) these lists can  be manipulated and combined in a wide variety of ways. For example if a pentester uses Foca, or similar, and identifies that the username format of an organisation is `j_smith` and wants 10,000 guesses (with which to try "Password1", or whatever) the base-lists can be modified as follows:
+
+`head -n 10000 j.smith-x100000 | tr "\." "_" > usernames.txt`
+
+Altertatively; if the username would be `jwilliams` , but is always truncated to 7 characters, such as `jwillia`:
+
+`head -n 10000 j.smith-x100000 | tr -d "." | cut -c1-7 | awk '!x[$0]++' > usernames.txt`
+
+**Important:** when truncating usernames, duplicates can be generated, so it very is important to remove these, especially when used with password attacks where lockout is present. This can be done, whilst keeping statistically likely order, with the `awk '!x[$0]++'` command (as shown above).
+
+Unusual Email address formats can be created as follows for example `smith-j@example.com`:
+
+`head -n 10000 j.smith-x100000.txt  | awk -F "." '{ print $2 "-" $1 }' | sed 's/$/@example.com/g' > usernames.txt`
+
+Obviously a wider variety of formats can be combined to generate an enhanced selection of likely popular usernames or email addresses.
