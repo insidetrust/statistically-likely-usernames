@@ -104,7 +104,6 @@ test.sharepoint1
 test.sharepoint2
 test.sharepoint3
 test.sharepoint4
-test.singapore
 test.sqladmin
 test.sync
 test.test
@@ -393,8 +392,6 @@ citrixtest4
 citrixuser
 citrixuser1
 citrixuser2
-commontest
-connecttestuser
 corptestuser
 crm-test
 crm.test
@@ -418,8 +415,6 @@ customer_test
 data-test
 data.test
 data_test
-datafaxtest
-datafiletest
 dbmsuser
 dbuser
 desktest
