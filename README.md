@@ -53,7 +53,7 @@ smithj2.txt - As above x 5,000
 
 ## Rolling your own
 
-If this isn't sufficient (and it won't be in some cases, expect that!) these lists can  be manipulated and combined in a wide variety of ways. For example if a pentester uses Foca, or similar, and identifies that the username format of an organisation is `j_smith` and wants 10,000 guesses (with which to try "Password1", or whatever) the base-lists can be modified as follows:
+If this isn't sufficient (and it won't be in some cases, expect that!) the base-lists can be manipulated and combined in a wide variety of ways. For example if a pentester uses Foca, or similar, and identifies that the username format of an organisation is `j_smith` and wants 10,000 guesses (with which to try "Password1", or whatever) the base-lists can be modified as follows:
 
 `head -n 10000 j.smith-x100000 | tr "\." "_" > usernames.txt`
 
