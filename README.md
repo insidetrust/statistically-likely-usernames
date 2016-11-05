@@ -5,7 +5,7 @@ When many users are present in an application or network, I normally approach pa
 
 The best approach is a horizontal password attack, trying one password for thousands of possible usernames.
 
-The core username lists here were generated orignally from US Census data, though more recently I have been using lists I generated from base lists of data indexed from Facebook, Ref:[See original blog post by Ron Bowes](https://blog.skullsecurity.org/2010/return-of-the-facebook-snatchers). These lists have been tested extensively in live attacks against target networks and applications. This resulted in a very high degree of success (during authorised penetration tests).
+I orignally generated my core username lists from US Census data, though more recently I have been using lists I generated from base lists that some else extracted from 171 million names indexed on Facebook (which have several advantages) Ref: [See original blog post by Ron Bowes](https://blog.skullsecurity.org/2010/return-of-the-facebook-snatchers). The generated lists here have been tested extensively in live attacks against target networks and applications, and this has resulted in a very high degree of success (during authorised penetration tests).
 
 The initial reason for generating these username lists was that I wanted to know when it was statistically worthwhile to try z.smith, compared to say j.jackson (or any other name) and create the most efficient set of guesses in the shortest possible time, based on common username formats in statistically likely order.
 
