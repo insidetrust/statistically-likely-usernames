@@ -187,7 +187,6 @@ test_sharepoint
 test_sharepoint1
 test_sharepoint2
 test_sharepoint3
-test_singapore
 test_sync
 test_test
 test_user
