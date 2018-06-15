@@ -63,4 +63,3 @@ Unusual Email address formats can be created as follows for example `smith-j@exa
 
 `head -n 10000 j.smith-x100000.txt  | awk -F "." '{ print $2 "-" $1 }' | sed 's/$/@example.com/g' > usernames.txt`
 
-Obviously a wider variety of formats can be combined to generate an enhanced selection of likely popular usernames or email addresses.
