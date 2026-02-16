@@ -79,7 +79,7 @@ Obviously a wider variety of formats can be combined to generate an enhanced sel
 
 ### DOBer - Date of Birth list generator
 
-Many users incorporate their date of birth into passwords. DOBer generates date-of-birth strings in statistically likely order, assuming user ages follow a roughly normal distribution around a given average. Dates radiate outward from the average age, so the most likely dates appear first — useful for appending to password guesses or as standalone wordlists.
+Some apps require a date of birth as part of the password reset function. DOBer generates date-of-birth strings in statistically likely order, assuming user ages follow a roughly normal distribution around a given average. Dates radiate outward from the average age, so the most likely dates appear first — also useful for appending to password guesses or as standalone wordlists.
 
 Available in Python and PowerShell:
 
