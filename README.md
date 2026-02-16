@@ -74,3 +74,27 @@ Unusual Email address formats can be created as follows for example `smith-j@exa
 `head -n 10000 facebook-base-lists/j.smith-x100000.txt | awk -F "." '{ print $2 "-" $1 }' | sed 's/$/@example.com/g' > usernames.txt`
 
 Obviously a wider variety of formats can be combined to generate an enhanced selection of likely popular usernames or email addresses.
+
+## Tools
+
+### DOBer - Date of Birth list generator
+
+Many users incorporate their date of birth into passwords. DOBer generates date-of-birth strings in statistically likely order, assuming user ages follow a roughly normal distribution around a given average. Dates radiate outward from the average age, so the most likely dates appear first — useful for appending to password guesses or as standalone wordlists.
+
+Available in Python and PowerShell:
+
+**Python** (no dependencies):
+```
+python dober.py --format "%d%m%y"
+python dober.py --min 21 --max 26 --average 23 --format "%b-%d-%Y" -o dobs.txt
+python dober.py --format "%Y%m%d" | head -n 1000
+```
+
+**PowerShell**:
+```
+.\dober.ps1 -Format "ddMMyy"
+.\dober.ps1 -Min 21 -Max 26 -Average 23 -Format "MMM-dd-yyyy" -Output dobs.txt
+.\dober.ps1 -Format "yyyyMMdd" | Select-Object -First 1000
+```
+
+Both default to stdout so output can be piped directly into other tools. Use `-o` / `-Output` to write to a file instead.
